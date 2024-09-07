@@ -91,16 +91,20 @@
 
     <script>
         const preloader = document.querySelector('.preloader');
-        const main_tag = document.querySelector('.main-class');
+        const main = document.querySelector('.main-class');
         const header = document.querySelector('.header-class');
         window.addEventListener('load', () => {
             setTimeout(() => {
                 preloader.style.display = "none";
-                main_tag.classList.add("flex");
+                main.classList.add("flex");
                 header.style.display = "block";
                 document.body.style.backgroundImage = "linear-gradient(to bottom,rgb(0, 0, 0, 0.75) 0%,rgb(0, 0, 0, 0.75) 100%),url(./images/landing-image.jpg)";
                 document.body.classList.remove("flex");
             }, 5000);
+            setTimeout(() => {
+                header.style.animation = "showText 2s ease forwards";
+                main.style.animation = "showText 2s ease forwards";
+            }, 4000);
         });
 
     </script>

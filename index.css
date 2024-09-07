@@ -19,6 +19,7 @@ body {
   background-size: cover;
   background-position: center;
   font-family: Arial, Helvetica, sans-serif;
+  transition: all 2s ease;
 }
 
 .header-container {
@@ -31,6 +32,7 @@ body {
 header {
   padding: 10px;
   background-color: #0049af;
+  opacity: 0;
 }
 
 .logo {
@@ -87,6 +89,7 @@ nav button:hover {
 
 main {
   height: 100%;
+  opacity: 0;
 }
 
 main h1 {
