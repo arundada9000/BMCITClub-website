@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(0, 0, 0, 0.75) 0%,
+      rgb(0, 0, 0, 0.75) 100%
+    ),
+    url(./images/landing-image.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-container {
+  margin: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 10px;
+  background-color: #0049af;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+  height: 100%;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.2s ease-in-out;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+}
+
+nav button {
+  padding: 10px 20px;
+  border-top-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+  outline: none;
+  border: 1px solid #0049af;
+  color: #0049af;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+nav button:hover {
+  border-top-left-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  border-top-right-radius: 0.75rem;
+  border-bottom-left-radius: 0.75rem;
+}
+
+.main-content {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+main h1 {
+  color: white;
+  font-size: 3rem;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.club-logo-image {
+  background-color: white;
+  height: 35vh;
+  width: 35vh;
+  border-radius: 50%;
+  margin: 1.5rem;
+}
+
+.club-logo-image img {
+  height: 35vh;
+  width: 35vh;
+}
