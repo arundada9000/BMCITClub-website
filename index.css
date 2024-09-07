@@ -33,6 +33,7 @@ header {
   padding: 10px;
   background-color: #0049af;
   opacity: 0;
+  width: 100vw;
 }
 
 .logo {
@@ -88,7 +89,7 @@ nav button:hover {
 }
 
 main {
-  height: 100%;
+  margin-top: 5rem;
   opacity: 0;
 }
 
@@ -251,10 +252,24 @@ main h1 {
   transform-origin: 50% 50%;
 }
 
-.main-content {
-  display: none;
-}
-
-.main-content h1 {
-  color: #0049af;
+/* media query */
+@media (max-width: 565px) {
+  nav {
+    flex-direction: column;
+    margin-right: 3rem;
+  }
+  .logo,
+  .logo img {
+    width: 200px;
+    height: 200px;
+  }
+  main {
+    margin: 0;
+  }
+  .header-container {
+    margin: 1rem;
+  }
+  .landing-main-content h1 {
+    font-size: 2rem;
+  }
 }
