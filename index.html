@@ -77,7 +77,7 @@
     </header>
 
     <main class="main-class">
-        <div class="main-content">
+        <div class="landing-main-content">
             <h1>Heartiest Welcome</h1>
             <center>
                 <div class="club-logo-image">
@@ -91,16 +91,16 @@
 
     <script>
         const preloader = document.querySelector('.preloader');
-        const main = document.querySelector('.main-class');
+        const main_tag = document.querySelector('.main-class');
         const header = document.querySelector('.header-class');
         window.addEventListener('load', () => {
             setTimeout(() => {
                 preloader.style.display = "none";
-                main.style.display = "flex";
+                main_tag.classList.add("flex");
                 header.style.display = "block";
                 document.body.style.backgroundImage = "linear-gradient(to bottom,rgb(0, 0, 0, 0.75) 0%,rgb(0, 0, 0, 0.75) 100%),url(./images/landing-image.jpg)";
                 document.body.classList.remove("flex");
-            }, 6000);
+            }, 5000);
         });
 
     </script>

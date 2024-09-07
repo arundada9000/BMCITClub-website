@@ -81,20 +81,17 @@ nav button:hover {
   border-bottom-left-radius: 0.75rem;
 }
 
-.main-content {
+.landing-main-content {
   width: 100%;
 }
 
 main {
-  align-items: center;
-  justify-content: center;
   height: 100%;
 }
 
 main h1 {
   color: white;
   font-size: 3rem;
-  transition: all 0.3s ease-in-out;
   text-align: center;
 }
 
@@ -111,7 +108,7 @@ main h1 {
   width: 35vh;
 }
 
-/* svg styling */
+/*preloader only */
 .circle-outer {
   stroke-dasharray: 471.24;
   stroke-dashoffset: 471.24;
